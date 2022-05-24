@@ -6,4 +6,6 @@ It works by generating 1M bytes32 hashes from running `keccak256` on random 100 
 
 ## Conclusion
 
-`bytes32` storage space is HUGE!
+`bytes32` storage space is HUGE! It is probabilistically unlikely that any diamond storage would ever conflict.
+
+To put it in perspective, program that created 1M storage slots, the _closest_ two slots of the 1M had `1.07583655498272086 e+55 Gigabyte` difference.
